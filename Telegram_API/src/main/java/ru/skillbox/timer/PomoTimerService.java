@@ -88,7 +88,7 @@ public class PomoTimerService {
 
     private void sendPhoto(long chatId, String text) {
         try {
-            InputStream imageStream = getClass().getResourceAsStream("/images/motivation.png");
+            InputStream imageStream = getClass().getResourceAsStream("/images/motivation.jpg");
             if (imageStream == null) {
                 System.err.println("Image not found");
                 sendMessage(chatId, text); // fallback to text only
